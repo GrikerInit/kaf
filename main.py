@@ -9,9 +9,16 @@ token = os.getenv("DISCORD_BOT_TOKEN")
 async def on_ready():
  print('Bot is ready')
 
+hug1 = "hug me"
+
 @client.event
 async def on_message(message):
     if message.content == "hug":
         await message.channel.send('I will never hug anyone')
+
+@client.event
+async def on_message(message):
+    if message.content == hug1:
+        await message.channel.send('No Never')
 
 client.run(token)
