@@ -14,6 +14,6 @@ hug1 = "hug me"
 @client.event
 async def on_message(message):
     if message.content == hug1:
-        await message.channel.send('No Never')
+        await message.channel.send('No I Will Never Hug You')
 
 client.run(token)
